@@ -13,19 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('backend.index');
-// });
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 Route::get('/', function () {
     return redirect()->route('login');
 });
-
-//Route::get('/get-dashboard',[App\Http\Controllers\Backend\DefaultController::class, 'getdashboard'])->name('default.get-dashboard');
-// Route::get('/get-','Backend\DefaultController@get')->name('default.get-');
-// Route::get('/get-','Backend\DefaultController@get')->name('default.get-');
 
 Auth::routes();
 
